@@ -1,0 +1,76 @@
+
+html{
+  font-family: 'Times New Roman', Times, Georgia;
+  background-color: lightblue;
+}
+
+header{
+  text-align: center;
+}
+
+form{
+  /* Center */
+  margin: 0 auto;
+  /* Form bordered outline */
+  padding: 1em;
+  border: 1em solid lightslategrey;
+  background-color: whitesmoke;
+}
+
+/* removes list style */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* create spacing between each element */
+form li + li {
+  margin-top: 1em;
+}
+
+input,
+textarea {
+  /* larger font size is more appealing to the eye */
+  font-size: 1em;
+
+  /* Same sized boxes and matching borders */
+  width: 300px;
+  box-sizing: border-box; /* ensures the box is included when changing padding etc. */
+  border: 1px solid grey;
+}
+
+/* MDN "focus", highlights the form input elements for visivility */
+input:focus,
+textarea:focus {
+  border-color: black;
+}
+
+.submit input:hover{
+  background: lightgrey;
+}
+
+footer{
+  text-align: center;
+}
+
+/* State Styles */
+@media screen and (min-width: 458px){
+
+  fieldset{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+  form{
+    display: inline-block;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+  }
+
+  header,
+  footer{
+    text-align: left;
+  }
+}
